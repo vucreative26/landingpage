@@ -1,0 +1,52 @@
+/* Nền đen toàn trang */
+body {
+    background-color: #000000;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* Hiệu ứng cho Khối About Me */
+.about-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.image-effect {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(45deg, rgba(0,0,255,0.2), transparent); /* Hiệu ứng màu xanh nhẹ */
+    transition: 0.5s;
+}
+
+/* Hiệu ứng cho Khối Projects (Grid giống Behance) */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 50px;
+}
+
+.project-item {
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.project-item:hover {
+    transform: scale(1.05); /* Phóng to nhẹ khi di chuột vào */
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0.8);
+    width: 100%;
+    padding: 20px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.project-item:hover .overlay {
+    opacity: 1; /* Hiện thông tin khi hover */
+}

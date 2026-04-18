@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agency Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">AGENCY.VU</div>
+        <ul class="nav-links">
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="pricing.html">Bảng giá</a></li> <li><a href="#" id="contactBtn">Liên hệ</a></li> </ul>
+    </nav>
+
+    <header class="hero">
+        <h1>Sáng tạo không giới hạn</h1>
+        <p>Biến ý tưởng thiết kế từ PTS/AI thành hiện thực.</p>
+    </header>
+
+    <div id="contactPopup" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Liên hệ với chúng tôi</h2>
+            <form>
+                <input type="text" placeholder="Họ và tên" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Tin nhắn"></textarea>
+                <button type="submit">Gửi ngay</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
