@@ -1,38 +1,431 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agency Landing Page</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VU. Creative</title>
 
-    <nav class="navbar">
-        <div class="logo">AGENCY.VU</div>
-        <ul class="nav-links">
-            <li><a href="#">Trang chủ</a></li>
-            <li><a href="pricing.html">Bảng giá</a></li> <li><a href="#" id="contactBtn">Liên hệ</a></li> </ul>
+  <link rel="preconnect" href="https://api.fontshare.com" />
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bg-black m-0 p-0 overflow-x-hidden">
+
+<section class="relative w-full min-h-screen flex flex-col bg-black overflow-hidden">
+  <video class="absolute inset-0 w-full h-full object-cover" 
+         src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260217_030345_246c0224-10a4-422c-b324-070b7c0eceda.mp4" 
+         autoplay muted loop playsinline></video>
+
+  <div class="absolute inset-0 bg-black/50 z-10"></div>
+
+  <div class="relative z-20 flex flex-col w-full min-h-screen">
+    <nav class="nav-container">
+      <div class="flex items-center gap-[40px]">
+        <div class="logo-wrap">
+          <img src="assets/images/logo.png" alt="Brand Logo" class="logo-img" />
+        </div>
+
+        <div class="hidden md:flex items-center gap-[30px]">
+          <span class="nav-link">About Us <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5l4 4 4-4" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span class="nav-link">Dịch Vụ <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5l4 4 4-4" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span class="nav-link">Feedback <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5l4 4 4-4" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span class="nav-link">Liên hệ <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5l4 4 4-4" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </div>
+      </div>
+
+      <div class="pill-btn-wrap pill-btn-dark clickable">
+        <span class="pill-btn-inner">Join Waitlist</span>
+      </div>
     </nav>
 
-    <header class="hero">
-        <h1>Sáng tạo không giới hạn</h1>
-        <p>Biến ý tưởng thiết kế từ PTS/AI thành hiện thực.</p>
-    </header>
+    <div class="hero-content-wrapper">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span class="badge-text-muted">Early access available from</span>
+        <span class="badge-text-white">May 1, 2026</span>
+      </div>
 
-    <div id="contactPopup" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Liên hệ với chúng tôi</h2>
-            <form>
-                <input type="text" placeholder="Họ và tên" required>
-                <input type="email" placeholder="Email" required>
-                <textarea placeholder="Tin nhắn"></textarea>
-                <button type="submit">Gửi ngay</button>
-            </form>
-        </div>
+      <h1 class="hero-heading">Web3 at the Speed of Experience</h1>
+
+      <p class="hero-subtitle">
+        Powering seamless experiences and real-time connections, EOS is the base for creators who move with purpose, leveraging resilience, speed, and scale to shape the future.
+      </p>
+
+      <div class="pill-btn-wrap pill-btn-light clickable mt-[-16px]">
+        <span class="pill-btn-inner">Join Waitlist</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="section-container">
+  <div class="section-content">
+    <div class="section-header">
+      <span class="section-badge">Dịch vụ</span>
+      <h2 class="section-title">Giải pháp toàn diện cho doanh nghiệp</h2>
+      <p class="section-description">Chúng tôi cung cấp các dịch vụ chuyên nghiệp, tối ưu hóa trải nghiệm người dùng và hiệu suất kinh doanh</p>
     </div>
 
-    <script src="script.js"></script>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M16 4L4 10v12c0 7.18 4.82 13.9 12 16 7.18-2.1 12-8.82 12-16V10L16 4z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3 class="service-title">Bảo mật Web3</h3>
+        <p class="service-desc">Giải pháp bảo mật tiên tiến cho ứng dụng blockchain và smart contract</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M28 16c0 6.627-5.373 12-12 12S4 22.627 4 16 9.373 4 16 4s12 5.373 12 12z" stroke="currentColor" stroke-width="2"/><path d="M16 8v8l4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <h3 class="service-title">Tốc độ vượt trội</h3>
+        <p class="service-desc">Xử lý giao dịch nhanh chóng với độ trễ thấp nhất trên thị trường</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M16 4v24M4 16h24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="16" cy="16" r="10" stroke="currentColor" stroke-width="2"/></svg>
+        </div>
+        <h3 class="service-title">Tích hợp dễ dàng</h3>
+        <p class="service-desc">API đơn giản, tài liệu đầy đủ giúp tích hợp nhanh chóng</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M8 16h16M8 8h16M8 24h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <h3 class="service-title">Khả năng mở rộng</h3>
+        <p class="service-desc">Hạ tầng linh hoạt, sẵn sàng mở rộng theo nhu cầu doanh nghiệp</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio" class="section-container">
+  <div class="section-content">
+    <div class="section-header">
+      <span class="section-badge">Portfolio</span>
+      <h2 class="section-title">Dự án tiêu biểu</h2>
+      <p class="section-description">Những sản phẩm đã được triển khai thành công trên nền tảng EOS</p>
+    </div>
+
+    <div class="portfolio-grid">
+      <div class="portfolio-card">
+        <div class="portfolio-image">
+          <div class="portfolio-placeholder">DeFi Platform</div>
+        </div>
+        <div class="portfolio-content">
+          <h3 class="portfolio-title">DeFi Exchange</h3>
+          <p class="portfolio-desc">Nền tảng giao dịch phi tập trung với thanh khoản cao</p>
+          <div class="portfolio-tags">
+            <span class="tag">DeFi</span>
+            <span class="tag">Trading</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-card">
+        <div class="portfolio-image">
+          <div class="portfolio-placeholder">NFT Marketplace</div>
+        </div>
+        <div class="portfolio-content">
+          <h3 class="portfolio-title">NFT Gallery</h3>
+          <p class="portfolio-desc">Thị trường NFT với trải nghiệm mua bán mượt mà</p>
+          <div class="portfolio-tags">
+            <span class="tag">NFT</span>
+            <span class="tag">Art</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-card">
+        <div class="portfolio-image">
+          <div class="portfolio-placeholder">Gaming dApp</div>
+        </div>
+        <div class="portfolio-content">
+          <h3 class="portfolio-title">Web3 Gaming</h3>
+          <p class="portfolio-desc">Game blockchain với hàng triệu người chơi</p>
+          <div class="portfolio-tags">
+            <span class="tag">Gaming</span>
+            <span class="tag">P2E</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="process" class="section-container">
+  <div class="section-content">
+    <div class="section-header">
+      <span class="section-badge">Quy trình</span>
+      <h2 class="section-title">Cách chúng tôi làm việc</h2>
+      <p class="section-description">Quy trình làm việc chuyên nghiệp, minh bạch từ ý tưởng đến triển khai</p>
+    </div>
+
+    <div class="process-timeline">
+      <div class="process-step">
+        <div class="process-number">01</div>
+        <div class="process-content">
+          <h3 class="process-title">Tư vấn & Phân tích</h3>
+          <p class="process-desc">Lắng nghe nhu cầu, phân tích yêu cầu và đề xuất giải pháp tối ưu</p>
+        </div>
+      </div>
+
+      <div class="process-step">
+        <div class="process-number">02</div>
+        <div class="process-content">
+          <h3 class="process-title">Thiết kế & Lên kế hoạch</h3>
+          <p class="process-desc">Xây dựng kiến trúc hệ thống và lộ trình triển khai chi tiết</p>
+        </div>
+      </div>
+
+      <div class="process-step">
+        <div class="process-number">03</div>
+        <div class="process-content">
+          <h3 class="process-title">Phát triển & Kiểm thử</h3>
+          <p class="process-desc">Coding chuyên nghiệp với quy trình kiểm thử nghiêm ngặt</p>
+        </div>
+      </div>
+
+      <div class="process-step">
+        <div class="process-number">04</div>
+        <div class="process-content">
+          <h3 class="process-title">Triển khai & Hỗ trợ</h3>
+          <p class="process-desc">Deploy lên production và hỗ trợ vận hành liên tục</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="pricing" class="section-container">
+  <div class="section-content">
+    <div class="section-header">
+      <span class="section-badge">Bảng giá</span>
+      <h2 class="section-title">Gói dịch vụ phù hợp với bạn</h2>
+      <p class="section-description">Lựa chọn gói dịch vụ phù hợp với quy mô và nhu cầu của doanh nghiệp</p>
+    </div>
+
+    <div class="pricing-grid">
+      <div class="pricing-card">
+        <div class="pricing-header">
+          <h3 class="pricing-name">Starter</h3>
+          <p class="pricing-desc">Dành cho startup và dự án nhỏ</p>
+        </div>
+        <div class="pricing-price">
+          <span class="price-amount">$99</span>
+          <span class="price-period">/tháng</span>
+        </div>
+        <ul class="pricing-features">
+          <li class="feature-item">
+            <svg class="feature-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>10,000 giao dịch/tháng</span>
+          </li>
+          <li class="feature-item">
+            <svg class="feature-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>API cơ bản</span>
+          </li>
+          <li class="feature-item">
+            <svg class="feature-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Hỗ trợ email</span>
+          </li>
+          <li class="feature-item">
+            <svg class="feature-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Tài liệu đầy đủ</span>
+          </li>
+        </ul>
+        <button class="pricing-btn">Bắt đầu ngay</button>
+      </div>
+
+      <div class="pricing-card pricing-featured">
+        <div class="featured-badge">Phổ biến nhất</div>
+        <div class="pricing-header">
+          <h3 class="pricing-name">Professional</h3>
+          <p class="pricing-desc">Dành cho doanh nghiệp vừa</p>
+        </div>
+        <div class="pricing-price">
+          <span class="price-amount">$299</span>
+          <span class="price-period">/tháng</span>
+        </div>
+        <ul class="pricing-features">
+          <li class="feature-item">
+            <svg class="feature-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>100,000 giao dịch/tháng</span>
+          </li>
+          <li class="feature-item">
+            <svg class="feature-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>API nâng cao</span>
+          </li>
+          <li class="feature-item">
+            <svg class="feature-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Hỗ trợ 24/7</span>
+          </li>
+          <li class="feature-item">
+            <svg class="feature-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Dashboard phân tích</span>
+          </li>
+          <li class="feature-item">
+            <svg class="feature-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Tư vấn kỹ thuật</span>
+          </li>
+        </ul>
+        <button class="pricing-btn pricing-btn-featured">Bắt đầu ngay</button>
+      </div>
+
+      <div class="pricing-card">
+        <div class="pricing-header">
+          <h3 class="pricing-name">Enterprise</h3>
+          <p class="pricing-desc">Giải pháp tùy chỉnh</p>
+        </div>
+        <div class="pricing-price">
+          <span class="price-amount">Custom</span>
+        </div>
+        <ul class="pricing-features">
+          <li class="feature-item">
+            <svg class="feature-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Không giới hạn giao dịch</span>
+          </li>
+          <li class="feature-item">
+            <svg class="feature-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>API tùy chỉnh</span>
+          </li>
+          <li class="feature-item">
+            <svg class="feature-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Dedicated support</span>
+          </li>
+          <li class="feature-item">
+            <svg class="feature-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>SLA đảm bảo</span>
+          </li>
+          <li class="feature-item">
+            <svg class="feature-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Đào tạo & tư vấn</span>
+          </li>
+        </ul>
+        <button class="pricing-btn">Liên hệ</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="feedback" class="section-container">
+  <div class="section-content">
+    <div class="section-header">
+      <span class="section-badge">Đánh giá</span>
+      <h2 class="section-title">Khách hàng nói gì về chúng tôi</h2>
+      <p class="section-description">Những phản hồi chân thực từ đối tác và khách hàng</p>
+    </div>
+
+    <div class="feedback-grid">
+      <div class="feedback-card">
+        <div class="feedback-stars">★★★★★</div>
+        <p class="feedback-text">"EOS đã giúp chúng tôi giảm 70% thời gian xử lý giao dịch. Tốc độ và độ ổn định vượt trội so với các nền tảng khác."</p>
+        <div class="feedback-author">
+          <div class="author-avatar">JD</div>
+          <div class="author-info">
+            <div class="author-name">John Doe</div>
+            <div class="author-role">CEO, TechCorp</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="feedback-card">
+        <div class="feedback-stars">★★★★★</div>
+        <p class="feedback-text">"Đội ngũ support rất chuyên nghiệp, luôn sẵn sàng hỗ trợ 24/7. Tài liệu API rõ ràng, dễ tích hợp."</p>
+        <div class="feedback-author">
+          <div class="author-avatar">SA</div>
+          <div class="author-info">
+            <div class="author-name">Sarah Anderson</div>
+            <div class="author-role">CTO, DeFi Labs</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="feedback-card">
+        <div class="feedback-stars">★★★★★</div>
+        <p class="feedback-text">"Chi phí hợp lý, hiệu suất cao. Chúng tôi đã scale từ 1000 lên 100,000 users mà không gặp vấn đề gì."</p>
+        <div class="feedback-author">
+          <div class="author-avatar">MK</div>
+          <div class="author-info">
+            <div class="author-name">Michael Kim</div>
+            <div class="author-role">Founder, NFT Studio</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="footer" class="footer-container">
+  <div class="footer-content">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="assets/images/logo.png" alt="Brand Logo" class="footer-logo" />
+        <p class="footer-tagline">Powering the future of Web3 experiences</p>
+        <div class="footer-social">
+          <a href="#" class="social-link">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M18.333 5.833a7.5 7.5 0 01-2.158.592 3.77 3.77 0 001.65-2.075 7.533 7.533 0 01-2.383.908 3.75 3.75 0 00-6.392 3.417A10.65 10.65 0 012.65 4.858a3.75 3.75 0 001.158 5 3.717 3.717 0 01-1.7-.467v.042a3.75 3.75 0 003.008 3.675 3.75 3.75 0 01-1.692.067 3.75 3.75 0 003.5 2.6A7.533 7.533 0 011.667 17.5 10.617 10.617 0 007.417 19c6.883 0 10.65-5.7 10.65-10.65 0-.158 0-.317-.008-.475a7.617 7.617 0 001.875-1.942z" fill="currentColor"/></svg>
+          </a>
+          <a href="#" class="social-link">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 1.667C5.4 1.667 1.667 5.4 1.667 10S5.4 18.333 10 18.333 18.333 14.6 18.333 10 14.6 1.667 10 1.667zm3.333 7.083h-2.5v7.5h-2.5v-7.5h-1.666V6.667h1.666V5.417c0-1.375.658-3.542 3.542-3.542l2.6.008v2.9h-1.884c-.308 0-.741.15-.741.8v1.084h2.625l-.142 2.083z" fill="currentColor"/></svg>
+          </a>
+          <a href="#" class="social-link">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 1.667a8.333 8.333 0 100 16.666 8.333 8.333 0 000-16.666zm0 2.5a2.5 2.5 0 110 5 2.5 2.5 0 010-5zm0 11.666a6.042 6.042 0 01-5-2.666c.025-1.659 3.333-2.567 5-2.567s4.975.908 5 2.567a6.042 6.042 0 01-5 2.666z" fill="currentColor"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-column">
+          <h4 class="footer-heading">Sản phẩm</h4>
+          <a href="#" class="footer-link">Tính năng</a>
+          <a href="#" class="footer-link">Bảng giá</a>
+          <a href="#" class="footer-link">Tài liệu</a>
+          <a href="#" class="footer-link">API Reference</a>
+        </div>
+
+        <div class="footer-column">
+          <h4 class="footer-heading">Công ty</h4>
+          <a href="#" class="footer-link">Về chúng tôi</a>
+          <a href="#" class="footer-link">Blog</a>
+          <a href="#" class="footer-link">Tuyển dụng</a>
+          <a href="#" class="footer-link">Liên hệ</a>
+        </div>
+
+        <div class="footer-column">
+          <h4 class="footer-heading">Hỗ trợ</h4>
+          <a href="#" class="footer-link">Trung tâm trợ giúp</a>
+          <a href="#" class="footer-link">Community</a>
+          <a href="#" class="footer-link">Status</a>
+          <a href="#" class="footer-link">Báo cáo lỗi</a>
+        </div>
+
+        <div class="footer-column">
+          <h4 class="footer-heading">Liên hệ</h4>
+          <a href="mailto:hello@eos.com" class="footer-link">hello@eos.com</a>
+          <a href="tel:+84123456789" class="footer-link">+84 123 456 789</a>
+          <p class="footer-address">123 Đường ABC, Quận 1<br/>TP. Hồ Chí Minh, Việt Nam</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copyright">© 2026 EOS. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="#" class="footer-legal-link">Điều khoản sử dụng</a>
+        <a href="#" class="footer-legal-link">Chính sách bảo mật</a>
+        <a href="#" class="footer-legal-link">Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
